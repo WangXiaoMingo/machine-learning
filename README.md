@@ -1,17 +1,25 @@
 # 1. machine-learning
 常见机器学习算法回归、分类应用示例，调参；包括基础的线性回归算法、集成学习、支持向量机等；调参包括网格搜索、随机搜索、贝叶斯优化、优化算法如GA优化等。
 需安装依赖库：
+
 pip install scikit-opt
+
 pip install bayesian-optimization
+
 pip install scikit-learn
+
 pip install lightgbm
 
 # 2. 算法包括以下（分类、回归）：
 ## 线性回归算法
 1）线性回归：LinearRegression
+
 2）岭回归：Ridge
+
 3）套索回归：Least absolute shrinkage and selection operator：Lasso
+
 4）弹性网络：ElasticNet
+
 5）贝叶斯回归：BayesianRidge
 
 ## 支持向量机
