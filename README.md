@@ -30,32 +30,51 @@ pip install lightgbm
 
 ## 集成学习：Ensemble methods
 1）DecisionTreeRegressor：CART
+
 2）RandomForestRegressor：RF
+
 3）BaggingRegressor
+
 4）AdaBoostRegressor
+
 5）ExtraTreesRegressor
+
 6）GradientBoostingRegressor
+
 7）StackingRegressor
+
 8）VotingRegressor
+
 9）lightgbm
 
 # 3. 算法调参
 --------------------------------------------------------
 // 网格搜索 GridSearchCV 
+
 // 随机搜索 RandomizedSearchCV
+
 // 贝叶斯优化 （BayesianOptimization）
+
 // 优化算法： GA
 --------------------------------------------------------
 // 训练集：测试集 == 80%：20%
+
 // 训练集-> K折交叉验证调参
+
 // 选择最优参数后模型训练，测试集测试
 ---------------------------------------------------------
 // 四种寻优方式可选择
+
 // grid_search_cv: 网格搜索
+
 // randomized_search_cv：随机搜索
+
 // bayesian_optimization：贝叶斯优化
+
 // ga_optimization：GA优化
+
 // 指定相应方法优化run_flag，
+
 // 1-全部优化，2-网格搜索，3-随机搜索，4贝叶斯优化，5-GA优化
 ---------------------------------------------------------
 
