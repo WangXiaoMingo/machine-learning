@@ -11,7 +11,7 @@ pip install scikit-learn
 pip install lightgbm
 
 # 2. 算法包括以下（分类、回归）：
-## 线性回归算法
+## 2.1 线性回归算法
 1）线性回归：LinearRegression
 
 2）岭回归：Ridge
@@ -22,13 +22,13 @@ pip install lightgbm
 
 5）贝叶斯回归：BayesianRidge
 
-## 支持向量机
+## 2.2 支持向量机
 1） SVR
 
-## Nearest Neighbors
+## 2.3 Nearest Neighbors
 1） KNN
 
-## 集成学习：Ensemble methods
+## 2.4 集成学习：Ensemble methods
 1）DecisionTreeRegressor：CART
 
 2）RandomForestRegressor：RF
@@ -56,12 +56,14 @@ pip install lightgbm
 // 贝叶斯优化 （BayesianOptimization）
 
 // 优化算法： GA
+
 --------------------------------------------------------
 // 训练集：测试集 == 80%：20%
 
 // 训练集-> K折交叉验证调参
 
 // 选择最优参数后模型训练，测试集测试
+
 ---------------------------------------------------------
 // 四种寻优方式可选择
 
@@ -76,10 +78,13 @@ pip install lightgbm
 // 指定相应方法优化run_flag，
 
 // 1-全部优化，2-网格搜索，3-随机搜索，4贝叶斯优化，5-GA优化
+
 ---------------------------------------------------------
 
 # 4. LightGBM示例，核心算法
+
 ==================定义优化模型====================
+
 class ParameterOptimization:
     def __init__(self,x_train,y_train,kfold,scoring='neg_mean_squared_error'):
         self.x_train = x_train
@@ -150,8 +155,6 @@ class ParameterOptimization:
         return best_x
 
 # 5.完整实例
-
-
 import pandas as pd
 from pylab import *
 from sklearn.model_selection import train_test_split
