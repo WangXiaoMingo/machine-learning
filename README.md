@@ -82,8 +82,9 @@ pip install lightgbm
 ---------------------------------------------------------
 
 # 4. LightGBM示例，核心算法
+```python
 
-==================定义优化模型====================
+'''==================定义优化模型===================='''
 
 class ParameterOptimization:
     def __init__(self,x_train,y_train,kfold,scoring='neg_mean_squared_error'):
@@ -153,8 +154,10 @@ class ParameterOptimization:
         plt.savefig('./fig/{}.jpg'.format('适应度曲线'), dpi=500, bbox_inches='tight')  # 保存图片
         plt.show()
         return best_x
+```
 
 # 5.完整实例
+```python
 import pandas as pd
 from pylab import *
 from sklearn.model_selection import train_test_split
@@ -184,9 +187,6 @@ pd.set_option('display.max_rows',100)
 np.set_printoptions(suppress=True)
 pd.set_option('precision',3)
 np.set_printoptions(precision=4)
-
-
-
 
 def figure_plot(predict, true_value, figure_property,key_label=None):
     # 折线图
@@ -695,3 +695,4 @@ for algorithm in pipelines:
 // 1) 增加K折交叉验证次数，num_folds，当num_folds较大时，训练集和交叉验证训练集可等同
 // 2) 或者采用全部数据K折寻参，然后训练集建模
 ====================================================================='''
+```
